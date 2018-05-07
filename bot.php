@@ -4,8 +4,8 @@ just for fun
 */
 require_once('./line_class.php');
 require_once('./unirest-php-master/src/Unirest.php');
-$channelAccessToken = '0ZWxfz+tz6e6wOz3EDBLW11p/zxFTG/fh7FKGCk8gc6ejz+4XnrZGXJISHzKnSPr+R2KInYbdwzH60MuNcG/vymwVbGGKMa6tf9ZWiiPDT7ehAjUsqP4UuCEQkPXeOWfy72b5/ixFUIyV/c4Uu5fdQdB04t89/1O/w1cDnyilFU='; //sesuaikan
-$channelSecret = '7c79dcb25002167d8cb67153128d59eb';//sesuaikan
+$channelAccessToken = 'WHOoVf747Lo7lA+B9iYs2aBlALdd+GQq87B0L+aUo/10vhTEGaYsTcKk+GW1t28vVOsSAGag1+JlqBuAZZfDez/X5Xu6avs01tm2l01cfLt8+Fse+b8aaPBDHkEs50oLAB1OmEF/WPbzB7y+x/AMGQdB04t89/1O/w1cDnyilFU='; //sesuaikan
+$channelSecret = 'f84ed216c02fe885eae3df942aac7c52';//sesuaikan
 $client = new LINEBotTiny($channelAccessToken, $channelSecret);
 $userId 	= $client->parseEvents()[0]['source']['userId'];
 $groupId 	= $client->parseEvents()[0]['source']['groupId'];
@@ -425,7 +425,7 @@ function jawabs(){
 # require_once('./src/function/search-2.php');
 # require_once('./src/function/hard.php');
 if ($type == 'join') {
-    $text = "Makasih dh invite aku ke grup kak!! Ketik /menu untuk melihat fitur yang aq punya\n\n";
+    $text = "Makasih dh invite aku ke grup kak Creator By. Nugi!! Ketik /menu untuk melihat fitur yang aq punya\n\n";
     $text .= "untuk menggunakan fitur secara maksimal add aq dulu y kak :)\n";
     $balas = array(
         'replyToken' => $replyToken,
